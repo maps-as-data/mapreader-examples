@@ -1,0 +1,116 @@
+- notebook: notebooks/geospatial/annotation_examples/how-to-annotate-model-predictions.ipynb
+- notebook: notebooks/geospatial/annotation_examples/how-to-annotate-patches.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  path_save: maps
+  path_add_notebook: true # this is standard so won't add on others
+  url: https://mapseries-tilesets.s3.amazonaws.com/1inch_2nd_ed/{z}/{x}/{y}.png
+  queries:
+    wfs_ids:
+      - 439
+- notebook: notebooks/geospatial/classification_one_inch_maps/Pipeline.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    coordinates:
+      - -4.33, 55.90
+      - -3.25, 51.93
+  zoom: 14
+- notebook: notebooks/geospatial/context_classification_one_inch_maps/Pipeline.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    coordinates:
+      - -4.33, 55.90
+      - -3.25, 51.93
+  zoom: 14
+- notebook: notebooks/geospatial/text_spotting_one_inch_maps/deepsolo/Pipeline.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    coordinates:
+      - -4.33, 55.90
+      - -3.25, 51.93
+  zoom: 14
+- notebook: notebooks/geospatial/text_spotting_one_inch_maps/dptext-detr/Pipeline.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    coordinates:
+      - -4.33, 55.90
+      - -3.25, 51.93
+  zoom: 14
+- notebook: notebooks/geospatial/workshop_june_2023/Workshop_June2023_empty.ipynb
+- notebook: notebooks/geospatial/workshop_june_2023/Workshop_June2023.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    polygons:
+      latlons:
+        - 55.6, -3.5, 56, -2.8
+      modes:
+        - within
+        - intersects
+    coordinates:
+      - -4.5, 55.4
+    lines:
+      latlons:
+        - xy1: 56.5, -5
+          xy2: 57.0, -4.5
+    wfs_ids:
+      - 12
+      - 30
+      - 37
+      - 38
+    string:
+      - literal: "Stirling"
+      - property: IMAGEURL
+        literal: 74487492
+      - property: IMAGEURL
+        literal: 74488562
+      - property: IMAGEURL
+        literal: 74488580
+      - property: IMAGEURL
+        literal: 74488586
+      - property: IMAGEURL
+        literal: 74488689
+      - property: IMAGEURL
+        literal: 74488700
+      - property: IMAGEURL
+        literal: 74488705
+      - property: IMAGEURL
+        literal: 74488722
+      - property: IMAGEURL
+        literal: 74488742
+  zoom: 14
+- notebook: notebooks/geospatial/workshops_2024/data_viz_all_uk.ipynb
+- notebook: notebooks/geospatial/workshops_2024/data_viz_small.ipynb
+- notebook: notebooks/geospatial/workshops_2024/explore_text_on_maps.ipynb
+- notebook: notebooks/geospatial/workshops_2024/metadata_exploration.ipynb
+- notebook: notebooks/geospatial/workshops_2024/Workshop_2024_DeepSolo.ipynb
+- notebook: notebooks/geospatial/workshops_2024/Workshop_2024_download_examples.ipynb
+- notebook: notebooks/geospatial/workshops_2024/Workshop_2024_part1.ipynb
+  metadata: notebooks/metadata/metadata_OS_One_Inch_GB_WFS_light.json
+  url: https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png
+  path_save: maps
+  queries:
+    string:
+      - property: IMAGEURL
+        literal: 75650661
+      - property: IMAGEURL
+        literal: 75650697
+      - property: IMAGEURL
+        literal: 75650823
+      - property: IMAGEURL
+        literal: 75650907
+      - property: IMAGEURL
+        literal: 75650892
+      - property: IMAGEURL
+        literal: 75650931
+  zoom: 17
+- notebook: notebooks/geospatial/workshops_2024/Workshop_2024_part2.ipynb
+- notebook: notebooks/geospatial/workshops_2024/Workshop_2024_part3.ipynb
