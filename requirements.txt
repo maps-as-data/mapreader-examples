@@ -1,0 +1,3 @@
+mapreader @ git+https://github.com/Living-with-machines/MapReader.git@main
+jupyter
+pyyaml
