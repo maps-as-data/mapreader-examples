@@ -21,7 +21,7 @@ To run the Docker container, run the following command:
 docker run -p 8888:8888 mapreader-examples
 ```
 
-## Running the Docker container from Docker Hub
+## Running the Docker container from Docker Hub
 
 To run the Docker container from Docker Hub, run the following command:
 
