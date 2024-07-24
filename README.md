@@ -4,6 +4,13 @@ A containerised application for testing out the MapReader library.
 
 ## Creating the Docker image
 
+Clone the repository and navigate to the root directory of the repository.
+
+```bash
+git clone https://github.com/Living-with-machines/MapReader-examples
+cd MapReader-examples
+```
+
 To create the Docker image, run the following command:
 
 ```bash
