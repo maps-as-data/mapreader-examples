@@ -17,8 +17,12 @@ To create the Docker image, run the following command:
 docker build -t mapreader-examples .
 ```
 
-Note: This will take a while to complete as maps will be downloaded from the
-NLS. In our current tests, it takes ~30-35 minutes to complete.
+Note: This will take a while to complete as the following activities complete:
+
+- Python setup ~22s
+- pip install ~7min
+- Downloading maps from NLS ~22-28min
+- **Total: ~30-35min**
 
 ## Running the Docker container
 
