@@ -3,7 +3,7 @@ FROM python:3.11
 
 RUN apt-get update
 
-RUN apt-get install -y libgdal-dev
+RUN apt-get install -y libgdal-dev libgl1-mesa-glx
 
 # Set the working directory to /app
 WORKDIR /app
