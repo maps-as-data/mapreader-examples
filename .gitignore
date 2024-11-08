@@ -1,6 +1,21 @@
-maps
-test.ipynb
-parent_df.csv
-patch_df.csv
-.maps
-patches_*_pixel
+# classification one inch
+worked_examples/geospatial/*classification_one_inch_maps/*
+!worked_examples/geospatial/*classification_one_inch_maps/Pipeline.ipynb
+!worked_examples/geospatial/*classification_one_inch_maps/annotations_one_inch/rail_space_#rw#.csv
+
+# text spotting one inch
+worked_examples/geospatial/text_spotting_one_inch_maps/*/*
+!worked_examples/geospatial/text_spotting_one_inch_maps/*/*/Pipeline.ipynb
+
+# classification mnist
+worked_examples/non-geospatial/classification_mnist/*
+!worked_examples/non-geospatial/classification_mnist/Pipeline.ipynb
+!worked_examples/non-geospatial/classification_mnist/annotations_mnist/mnist_#kasra#.csv
+!worked_examples/non-geospatial/classification_mnist/small_mnist/
+
+# classification plant phenotype
+worked_examples/non-geospatial/classification_plant_phenotype/*
+!worked_examples/non-geospatial/classification_plant_phenotype/Pipeline.ipynb
+!worked_examples/non-geospatial/classification_plant_phenotype/annotations_plant_phenotype_open_acess/phenotype_test_#kasra#.csv
+!worked_examples/non-geospatial/classification_plant_phenotype/dataset/
+
