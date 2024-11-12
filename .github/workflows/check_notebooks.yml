@@ -36,21 +36,20 @@
           - name: Clone DPText-DETR
             run: |
               git clone https://github.com/maps-as-data/DPText-DETR.git
+              export DPTEXT_PATH=$(pwd)/DPText-DETR
     
           - name: Clone DeepSolo
             run: |
               git clone https://github.com/maps-as-data/DeepSolo.git
-    
-          - name: Clone MapTextPipeline
-            run: |
-              git clone https://github.com/maps-as-data/MapTextPipeline.git
+              export DEEPSOLO_PATH=$(pwd)/DeepSolo
     
           - name: Hugging Face CLI
             run: |
               pip install -U "huggingface_hub[cli]"
               huggingface-cli download rwood-97/DPText_DETR_ArT_R_50_poly art_final.pth --local-dir .
+              exort DPTEXT_MODEL_PATH=$(pwd)/art_final.pth
               huggingface-cli download rwood-97/DeepSolo_ic15_res50 ic15_res50_finetune_synth-tt-mlt-13-15-textocr.pth --local-dir .
-              huggingface-cli download rwood-97/MapTextPipeline_rumsey rumsey-finetune.pth --local-dir .
+              export DEEPSOLO_MODEL_PATH=$(pwd)/ic15_res50_finetune_synth-tt-mlt-13-15-textocr.pth
     
           - name: Run notebooks
             run: |
