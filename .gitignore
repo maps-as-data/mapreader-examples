@@ -1,3 +1,7 @@
+# maps and patches
+worked_examples/geospatial/maps/
+worked_examples/geospatial/patches_*_*/
+
 # classification one inch
 worked_examples/geospatial/*classification_one_inch_maps/*
 !worked_examples/geospatial/*classification_one_inch_maps/Pipeline.ipynb
@@ -5,7 +9,7 @@ worked_examples/geospatial/*classification_one_inch_maps/*
 
 # text spotting one inch
 worked_examples/geospatial/text_spotting_one_inch_maps/*/*
-!worked_examples/geospatial/text_spotting_one_inch_maps/*/*/Pipeline.ipynb
+!worked_examples/geospatial/text_spotting_one_inch_maps/*/Pipeline.ipynb
 
 # classification mnist
 worked_examples/non-geospatial/classification_mnist/*
