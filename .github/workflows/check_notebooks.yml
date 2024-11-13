@@ -37,6 +37,7 @@
               python -m pip install wheel
               python -m pip install numpy==1.26.4 torch==2.2.2 torchvision==0.17.2 -f https://download.pytorch.org/whl/torch_stable.html
               python -m pip install -r requirements.txt
+              pip install papermill
     
           - name: Clone DPText-DETR
             run: |
@@ -57,4 +58,4 @@
               find . -name "*.ipynb" -exec sed -Ei "s/num_epochs=.?.?/num_epochs=1/g" {} +
               find . -name "*.ipynb" -exec sed -i "s/PatchDataset(patch_df,/PatchDataset(patch_df[:1],/g" {} +
               find . -name "*.ipynb" -exec sed -i "s/PatchContextDataset(patch_df,/PatchDataset(patch_df[:1],/g" {} +
-              find . -name "*.ipynb" -exec jupyter execute {} +
+              find . -name "*.ipynb" -exec papermill --cwd $(dirname {}) --log-output {} {} \;
