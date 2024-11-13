@@ -55,4 +55,6 @@
           - name: Run notebooks
             run: |
               find . -name "*.ipynb" -exec sed -Ei "s/num_epochs=.?.?/num_epochs=1/g" {} +
+              find . -name "*.ipynb" -exec sed -i "s/PatchDataset(patch_df,/PatchDataset(patch_df[:1],/g" {} +
+              find . -name "*.ipynb" -exec sed -i "s/PatchContextDataset(patch_df,/PatchDataset(patch_df[:1],/g" {} +
               find . -name "*.ipynb" -exec jupyter execute {} +
