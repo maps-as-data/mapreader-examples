@@ -22,3 +22,4 @@ worked_examples/non-geospatial/classification_plant_phenotype/*
 !worked_examples/non-geospatial/classification_plant_phenotype/annotations_phenotype_open_access/
 !worked_examples/non-geospatial/classification_plant_phenotype/dataset/
 
+!worked_examples/geospatial/*classification_one_inch_maps/test.ipynb
