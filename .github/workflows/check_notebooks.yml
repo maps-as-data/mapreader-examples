@@ -57,4 +57,4 @@
             run: |
               find . -name "*.ipynb" -exec sed -Ei "s/num_epochs=.?.?/num_epochs=1/g" {} +
               find . -name "*.ipynb" -exec sed -i "s/annotator.annotate/#annotator.annotate/g" {} +
-              find . -name "*test.ipynb" -exec bash -c 'papermill --cwd $(dirname {}) --log-output {} {}' \;
+              find . -name "*test.ipynb" -print0 | xargs -0 -S 10000 -I {} -t bash -c 'papermill --cwd $(dirname {}) --log-output {} {} || exit 255' 
