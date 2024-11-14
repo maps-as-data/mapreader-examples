@@ -70,7 +70,7 @@ jupyter notebook
 
 This will open a Jupyter Notebook in your browser.
 If it doesn't open, copy the link shown in your terminal and paste it into a new tab. 
-From here, you can navigate to the `worked_examples` directory and open the worked examples you are interested in and start running the code.
+From here, you can navigate to the `notebooks` directory and open the worked examples you are interested in and start running the code.
 Any changes you make will be saved locally to your files.
 
 ## Docker container
@@ -109,7 +109,7 @@ docker run -p 8888:8888 mapreader-examples
 
 This will start the Jupyter Notebook in the docker container and should pop up in your browser. 
 If it doesn't, copy the link provided in the terminal and paste it into a new tab.
-From here, you can navigate to the `worked_examples` directory and open the worked examples you are interested in and start running the code.
+From here, you can navigate to the `notebooks` directory and open the worked examples you are interested in and start running the code.
 Any changes you make will be saved in the docker container, but won't be saved locally to your files unless you copy them over.
 
 ## Docker Hub

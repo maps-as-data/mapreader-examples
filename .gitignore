@@ -1,23 +1,23 @@
 # maps and patches
-worked_examples/geospatial/patches_*_*/
+notebooks/geospatial/patches_*_*/
 
 # classification one inch
-worked_examples/geospatial/*classification_one_inch_maps/*
-!worked_examples/geospatial/*classification_one_inch_maps/Pipeline.ipynb
-!worked_examples/geospatial/*classification_one_inch_maps/annotations_one_inch/
+notebooks/geospatial/*classification_one_inch_maps/*
+!notebooks/geospatial/*classification_one_inch_maps/Pipeline.ipynb
+!notebooks/geospatial/*classification_one_inch_maps/annotations_one_inch/
 
 # text spotting one inch
-worked_examples/geospatial/text_spotting_one_inch_maps/*/*
-!worked_examples/geospatial/text_spotting_one_inch_maps/*/Pipeline.ipynb
+notebooks/geospatial/text_spotting_one_inch_maps/*/*
+!notebooks/geospatial/text_spotting_one_inch_maps/*/Pipeline.ipynb
 
 # classification mnist
-worked_examples/non-geospatial/classification_mnist/*
-!worked_examples/non-geospatial/classification_mnist/Pipeline.ipynb
-!worked_examples/non-geospatial/classification_mnist/annotations_mnist/
-!worked_examples/non-geospatial/classification_mnist/small_mnist/
+notebooks/non-geospatial/classification_mnist/*
+!notebooks/non-geospatial/classification_mnist/Pipeline.ipynb
+!notebooks/non-geospatial/classification_mnist/annotations_mnist/
+!notebooks/non-geospatial/classification_mnist/small_mnist/
 
 # classification plant phenotype
-worked_examples/non-geospatial/classification_plant_phenotype/*
-!worked_examples/non-geospatial/classification_plant_phenotype/Pipeline.ipynb
-!worked_examples/non-geospatial/classification_plant_phenotype/annotations_phenotype_open_access/
-!worked_examples/non-geospatial/classification_plant_phenotype/dataset/
+notebooks/non-geospatial/classification_plant_phenotype/*
+!notebooks/non-geospatial/classification_plant_phenotype/Pipeline.ipynb
+!notebooks/non-geospatial/classification_plant_phenotype/annotations_phenotype_open_access/
+!notebooks/non-geospatial/classification_plant_phenotype/dataset/
