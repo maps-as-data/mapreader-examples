@@ -5,6 +5,7 @@
       push:
         branches:
           - dev
+          - main
       schedule:
         - cron: 0 0 1 * *
 
