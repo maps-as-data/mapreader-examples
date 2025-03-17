@@ -10,6 +10,10 @@ notebooks/geospatial/*classification_one_inch_maps/*
 notebooks/geospatial/text_spotting_one_inch_maps/*/*
 !notebooks/geospatial/text_spotting_one_inch_maps/*/Pipeline.ipynb
 
+# iiif download
+notebooks/geospatial/iiif_download/*
+!notebooks/geospatial/iiif_download/Pipeline.ipynb
+
 # classification mnist
 notebooks/non-geospatial/classification_mnist/*
 !notebooks/non-geospatial/classification_mnist/Pipeline.ipynb
