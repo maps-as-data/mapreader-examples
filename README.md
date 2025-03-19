@@ -57,7 +57,7 @@ pip install -r requirements.txt
 To allow the newly created Python virtual environment to show up in Jupyter notebooks, run the following command:
 
 ```bash
-python -m ipykernel install --user --name mapreader_examples"
+python -m ipykernel install --user --name "mapreader_examples"
 ```
 
 ### 4. Run the worked examples in Jupyter Notebook
