@@ -40,6 +40,7 @@
             run: |
               python -m pip install wheel
               python -m pip install numpy==1.26.4 torch==2.2.2 torchvision==0.17.2 -f https://download.pytorch.org/whl/torch_stable.html
+              pip install --no-build-isolation git+https://github.com/facebookresearch/detectron2.git
               python -m pip install -r requirements.txt
               pip install papermill
 
