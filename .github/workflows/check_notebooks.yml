@@ -8,6 +8,7 @@
           - main
       schedule:
         - cron: 0 0 1 * *
+      workflow_dispatch:        # manual trigger for testing
 
     env:
       DPTEXT_PATH: ${{ github.workspace }}/DPText-DETR
