@@ -43,16 +43,24 @@ python3 -m venv mapreader_examples
 source mapreader_examples/bin/activate
 ```
 
-### 2. Install the required dependencies
+### 3. Install the required dependencies
 
 To install the dependencies for the worked examples, run the following commands:
 
 ```bash
 cd mapreader-examples
+pip install wheel
+pip install numpy==1.26.4 torch==2.2.2 torchvision==0.17.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install --no-build-isolation git+https://github.com/facebookresearch/detectron2.git
+pip install --no-build-isolation git+https://github.com/maps-as-data/DeepSolo.git
+pip install --no-build-isolation git+https://github.com/maps-as-data/DPText-DETR.git
+pip install --no-build-isolation git+https://github.com/maps-as-data/MapTextPipeline.git
 pip install -r requirements.txt
 ```
 
-### 3. Add your Python virtual environment to Jupyter Notebook as a kernel
+> **Note:** `detectron2`, `DeepSolo`, `DPText-DETR`, and `MapTextPipeline` must be installed before `requirements.txt` and require `--no-build-isolation` due to build-time dependencies on the already-installed `torch` and `numpy`.
+
+### 4. Add your Python virtual environment to Jupyter Notebook as a kernel
 
 To allow the newly created Python virtual environment to show up in Jupyter notebooks, run the following command:
 
@@ -60,7 +68,7 @@ To allow the newly created Python virtual environment to show up in Jupyter note
 python -m ipykernel install --user --name "mapreader_examples"
 ```
 
-### 4. Run the worked examples in Jupyter Notebook
+### 5. Run the worked examples in Jupyter Notebook
 
 Lastly, to open a Jupyter Notebook, run the following command:
 
